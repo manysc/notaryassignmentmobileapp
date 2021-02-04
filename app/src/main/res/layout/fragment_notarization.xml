@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notarization.NotarizationFragment">
+
+    <TextView
+        android:id="@+id/client_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Phone Number"
+        app:layout_constraintStart_toEndOf="@+id/client_phone_number_label"
+        app:layout_constraintTop_toBottomOf="@+id/client_address" />
+
+    <TextView
+        android:id="@+id/notarization_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/notarization_section"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/escrow_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Escrow Number:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notarization_section" />
+
+    <TextView
+        android:id="@+id/escrow_officer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Escrow Officer:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escrow_number_label" />
+
+    <TextView
+        android:id="@+id/escrow_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/escrow_number"
+        app:layout_constraintStart_toEndOf="@+id/escrow_number_label"
+        app:layout_constraintTop_toBottomOf="@+id/notarization_section" />
+
+    <TextView
+        android:id="@+id/escrow_officer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/escrow_officer"
+        app:layout_constraintStart_toEndOf="@+id/escrow_officer_label"
+        app:layout_constraintTop_toBottomOf="@+id/escrow_number" />
+
+    <TextView
+        android:id="@+id/notarization_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Category:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escrow_officer_label" />
+
+    <TextView
+        android:id="@+id/notarization_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Category"
+        app:layout_constraintStart_toEndOf="@+id/notarization_category_label"
+        app:layout_constraintTop_toBottomOf="@+id/escrow_officer" />
+
+    <TextView
+        android:id="@+id/power_attorney_sign_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Power of Attorney Signing:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notarization_category_label" />
+
+    <TextView
+        android:id="@+id/power_attorney_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Power of Attorney Signing"
+        app:layout_constraintStart_toEndOf="@+id/power_attorney_sign_label"
+        app:layout_constraintTop_toBottomOf="@+id/notarization_category" />
+
+    <TextView
+        android:id="@+id/fee_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Fee:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power_attorney_sign_label" />
+
+    <TextView
+        android:id="@+id/notarization_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Fee"
+        app:layout_constraintStart_toEndOf="@+id/fee_label"
+        app:layout_constraintTop_toBottomOf="@+id/power_attorney_sign" />
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Date:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fee_label" />
+
+    <TextView
+        android:id="@+id/notarization_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Date"
+        app:layout_constraintStart_toEndOf="@+id/date_label"
+        app:layout_constraintTop_toBottomOf="@+id/notarization_fee" />
+
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Status:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_label" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Status"
+        app:layout_constraintStart_toEndOf="@+id/status_label"
+        app:layout_constraintTop_toBottomOf="@+id/notarization_date" />
+
+    <TextView
+        android:id="@+id/delivery_method_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Delivery Method:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_label" />
+
+    <Spinner
+        android:id="@+id/delivery_method"
+        android:layout_width="243dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/delivery_method_label"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+    <TextView
+        android:id="@+id/comments_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Comments:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_method_label" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comments_label" />
+
+    <TextView
+        android:id="@+id/client_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Client"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comments" />
+
+    <TextView
+        android:id="@+id/client_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Name:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/client_section" />
+
+    <TextView
+        android:id="@+id/client_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Client Name"
+        app:layout_constraintStart_toEndOf="@+id/client_name_label"
+        app:layout_constraintTop_toBottomOf="@+id/client_section" />
+
+    <TextView
+        android:id="@+id/client_address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Address:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/client_name_label" />
+
+    <TextView
+        android:id="@+id/client_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Client Address"
+        app:layout_constraintStart_toEndOf="@+id/client_address_label"
+        app:layout_constraintTop_toBottomOf="@+id/client_name" />
+
+    <TextView
+        android:id="@+id/client_phone_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Phone #:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/client_address_label" />
+
+    <TextView
+        android:id="@+id/client_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Email:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/client_phone_number_label" />
+
+    <TextView
+        android:id="@+id/client_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        app:layout_constraintStart_toEndOf="@+id/client_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/client_phone_number" />
+
+    <Button
+        android:id="@+id/accept_notarization_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="#1730BC"
+        android:text="ACCEPT"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

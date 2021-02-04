@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Notary Assignment App</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_login">"Invalid Login!"</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="notarizations_header">Notarizations</string>
+    <string name="to_do_tab">To Do</string>
+    <string name="in_progress_tab">In Progress</string>
+    <string name="done_tab">Done</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notarization_section">Notarization</string>
+    <string name="escrow_number">Escrow Number</string>
+    <string name="escrow_officer">Escrow Officer</string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
+
+    <string-array name="notarization_delivery_type_array">
+        <item>NOT_SET</item>
+        <item>DROP_OFF</item>
+        <item>UPS</item>
+        <item>FEDEX</item>
+        <item>USPS</item>
+        <item>DHL</item>
+        <item>OTHER</item>
+    </string-array>
+</resources>
